@@ -1,0 +1,23 @@
+.hero{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    flex: 1;
+}
+
+ul{
+    display: flex;
+    flex: 1;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+li{
+    margin: 15px;
+}
+
+.cat-logo{
+    margin-right: auto;
+}
