@@ -1,7 +1,10 @@
 .hero{
     display: flex;
-    margin-left: 150px;
-    margin-right: 150px;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-left: 300px;
+    margin-right: 300px;
+    /* width: max-content; */
 }
 
 nav{
@@ -15,15 +18,19 @@ ul{
     list-style-type: none;
     justify-content: flex-end;
     align-items: baseline;
+    padding-left: 0;
+}
+
+li{
+    font-size: 18px;
 }
 
 a{
     text-decoration: none;
-    margin: 15px;
 }
 
 .secondary-links{
-    font-size: 18px;
+    margin-left: 15px;
 }
 
 @font-face {
@@ -35,4 +42,34 @@ a{
     font-size: 40px;
     font-family: Cat;
     margin-right: auto;
+}
+
+.hero-content{
+    display: flex;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.hero-main{
+    font-size: 44px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-sub{
+    
+}
+
+.hero-sign-up{
+    width: max-content;
+}
+
+.hero-image{
+    height: 250px;
+    flex: 1;
 }
