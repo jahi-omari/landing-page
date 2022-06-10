@@ -1,10 +1,17 @@
-.hero{
+:root{
+    /* --font-style: Arial, Helvetica, sans-serif; */
+    --font-style: 'Roboto', sans-serif;
+}
+
+body{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    margin-left: 300px;
-    margin-right: 300px;
-    /* width: max-content; */
+    margin: 0;
+}
+.first-panel{
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #F4BFBF;
 }
 
 nav{
@@ -21,16 +28,20 @@ ul{
     padding-left: 0;
 }
 
-li{
-    font-size: 18px;
-}
-
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+    color: #827397;
 }
 
 .secondary-links{
     margin-left: 15px;
+    font-family: var(--font-style);
+    font-size: 18px;
 }
 
 @font-face {
@@ -46,30 +57,82 @@ a{
 
 .hero-content{
     display: flex;
+    margin-bottom: 125px;
 }
 .hero-text{
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: 15px;
+    margin-right: 125px;
 }
 
 .hero-main{
-    font-size: 44px;
-    font-weight: bolder;
+    font-size: 48px;
     margin-top: 0px;
     margin-bottom: 0px;
+    font-family: Cat;
+    text-shadow: 3px 3px #FFD9C0
 }
 
 .hero-sub{
-    
+    font-family: var(--font-style);
+    font-size: 18px;
+    text-align: justify;
 }
 
 .hero-sign-up{
     width: max-content;
+    background-color: #F4BFBF;
+    border: 2px solid black;
+    font-size: 15px;
+    font-family: var(--font-style);
+    padding: 8px 18px 8px 18px;
+}
+
+.hero-sign-up:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #827397;
 }
 
 .hero-image{
     height: 250px;
     flex: 1;
+    border: 10px solid white;
+}
+
+.second-panel{
+    /* padding-left: 200px;
+    padding-right: 200px; */
+    background-color: #FFD9C0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cat-portraits-heading{
+    font-size: 42px;
+    font-family: Cat;
+    text-shadow: 3px 3px #F4BFBF;
+}
+
+.cat-portraits-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.cat-portrait-text-and-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-portrait-image{
+    height: 100px;
+    flex: 1;
+    border: 10px solid white;
+}
+
+.cat-portrait-text{
+    font-size: 18px;
 }
