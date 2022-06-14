@@ -24,7 +24,7 @@ ul{
     flex: 1;
     list-style-type: none;
     justify-content: flex-end;
-    align-items: baseline;
+    align-items: center;
     padding-left: 0;
 }
 
@@ -42,6 +42,8 @@ a:hover{
     margin-left: 15px;
     font-family: var(--font-style);
     font-size: 18px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
 }
 
 @font-face {
@@ -50,7 +52,7 @@ a:hover{
 }
 
 .cat-logo{
-    font-size: 40px;
+    font-size: 45px;
     font-family: Cat;
     margin-right: auto;
 }
@@ -81,9 +83,9 @@ a:hover{
     text-align: justify;
 }
 
-.hero-sign-up{
+.hero-sign-up, .contact-banner-button{
     width: max-content;
-    background-color: #F4BFBF;
+    background-color: transparent;
     border: 2px solid black;
     font-size: 15px;
     font-family: var(--font-style);
@@ -134,6 +136,7 @@ a:hover{
 .cat-portrait-image{
     height: 200px;
     border: 10px solid white;
+    /* box-shadow: 10px 10px 10px 0px gray; */
 }
 
 .cat-portrait-text{
@@ -161,6 +164,7 @@ a:hover{
     font-family: Cat;
     font-size: 42px;
     margin-bottom: 0px;
+    /* text-shadow: 1px 1px #827397; */
 }
 
 .cat-fact-source{
@@ -168,4 +172,71 @@ a:hover{
     justify-content: flex-end;
     font-family: var(--font-style);
     font-size: 18px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.fourth-panel{
+    display: flex;
+    background-color: #8CC0DE;
+    justify-content: center;
+}
+
+.contact-banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px 80px 30px 80px;
+}
+.contact-banner-text-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contact-banner-header-text{
+    margin: 0;
+    font-family: Cat;
+    font-size: 36px;
+    /* font-weight: 700; */
+}
+
+.contact-banner-sub-text{
+    margin: 0;
+    font-family: var(--font-style);
+    font-size: 18px;
+}
+
+.contact-banner-button-container{
+    display: flex;
+    align-items: center;
+}
+
+.contact-banner-button{
+    height: fit-content;
+    align-self: center;
+    margin-right: auto;
+}
+.contact-banner-button:hover{
+    background-color: #827397;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #827397;
+}
+
+.footer-text{
+    font-family: var(--font-style);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
