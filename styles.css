@@ -141,3 +141,31 @@ a:hover{
     font-family: var(--font-style);
     text-align: justify;
 }
+
+.third-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF0D7;
+}
+
+.cat-fact-container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: 122px;
+}
+
+.cat-fact-text{
+    font-family: Cat;
+    font-size: 42px;
+    margin-bottom: 0px;
+}
+
+.cat-fact-source{
+    display: flex;
+    justify-content: flex-end;
+    font-family: var(--font-style);
+    font-size: 18px;
+}
