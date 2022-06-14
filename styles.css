@@ -57,6 +57,7 @@ a:hover{
 
 .hero-content{
     display: flex;
+    margin-top: 36px;
     margin-bottom: 125px;
 }
 .hero-text{
@@ -67,7 +68,7 @@ a:hover{
 }
 
 .hero-main{
-    font-size: 48px;
+    font-size: 56px;
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: Cat;
@@ -118,21 +119,25 @@ a:hover{
 
 .cat-portraits-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 100px;
+    /* width: -webkit-fill-available; */
 }
 
 .cat-portrait-text-and-image{
     display: flex;
     flex-direction: column;
+    max-width:275px;
+    margin-right: 40px;
 }
 
 .cat-portrait-image{
-    height: 100px;
-    flex: 1;
+    height: 200px;
     border: 10px solid white;
 }
 
 .cat-portrait-text{
     font-size: 18px;
+    font-family: var(--font-style);
+    text-align: justify;
 }
